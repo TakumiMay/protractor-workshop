@@ -1,0 +1,31 @@
+{
+  "name": "protractor-workshop",
+  "version": "1.0.0",
+  "description": "This is a Workshop about Protractor",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc",
+    "test": "npm run build && protractor dist/protractor/local.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TakumiMay/protractor-workshop.git"
+  },
+  "keywords": [
+    "ui-testing",
+    "protractor"
+  ],
+  "author": "Mayumi maythermyself@gmail.com TakumiMay\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[3~\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TakumiMay/protractor-workshop/issues"
+  },
+  "homepage": "https://github.com/TakumiMay/protractor-workshop#readme",
+  "devDependencies": {
+    "@types/jasminewd2": "^2.0.10",
+    "@types/node": "^16.0.2",
+    "protractor": "^7.0.0",
+    "typescript": "^4.3.5"
+  }
+}
