@@ -1,8 +1,13 @@
 import { browser } from 'protractor';
 
-describe('This is the first example of protractor', () => {
-  it('should have a title', () => {
+describe('Given a SDET learning protractor', () => {
+  describe('when open Google Page', () => {
+    beforeEach(() => {
       browser.driver.get('http://www.google.com');
+    });
+
+    it('then should have a title', () => {
       expect(browser.driver.getTitle()).toEqual('Google');
+    });
   });
 });
