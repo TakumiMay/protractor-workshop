@@ -9,5 +9,4 @@ export const config: Config = {
   onPrepare: () => {
     reporter();
   }
-
 };
