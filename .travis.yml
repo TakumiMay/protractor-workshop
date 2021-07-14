@@ -1,0 +1,10 @@
+dist: xenial
+addons:
+  chrome: stable
+language: node_js
+install:
+  - npm ci
+  - npm run webdriver:update
+cache:
+  directories:
+    - "node_modules"
