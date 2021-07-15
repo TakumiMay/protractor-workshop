@@ -6,6 +6,7 @@ describe('Buy a t-shirt', () => {
   });
 
   it('then should be bought a t-shirt', async () => {
+    browser.waitForAngularEnabled(false);
     await browser.get('http://automationpractice.com/');
     await(browser.sleep(10000));
     await $('#block_top_menu > ul > li:nth-child(3) > a').click();
