@@ -24,14 +24,9 @@ describe('Buy a t-shirt', () => {
   const signInStepPage: SignInStepPage = new SignInStepPage();
   const summaryStepPage: SummaryStepPage = new SummaryStepPage();
 
-  beforeEach(() => {
-    jasmine.DEFAULT_TIMEOUT_INTERVAL = 120000;
-  });
-
   it('then should be bought a t-shirt', async () => {
     await browser.waitForAngularEnabled(false);
     await browser.get('http://automationpractice.com/');
-    await(browser.sleep(10000));
     await menuContentPage.goToTShirtMenu();
     await(browser.sleep(5000));
     await productListPage.selectFirstItem();
