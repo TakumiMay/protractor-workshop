@@ -6,7 +6,7 @@ export class ShippingStepPage {
 
   constructor () {
     this.acceptTermsAndConditionCheck = $('#cgv');
-    this.proceedToCheckoutButton = $('#form > p > button > span');
+    this.proceedToCheckoutButton = $('.cart_navigation > .button > span');
   }
 
   public async acceptAndContinue(): Promise<void> {
