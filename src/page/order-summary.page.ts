@@ -4,7 +4,7 @@ export class OrderSummaryPage {
   private orderTitleLabel: ElementFinder;
 
   constructor () {
-    this.orderTitleLabel = $('#center_column > div > p > strong');
+    this.orderTitleLabel = $('.cheque-indent > .dark');
   }
 
   public async getOrderTitle(): Promise<string> {
