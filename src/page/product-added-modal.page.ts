@@ -4,7 +4,7 @@ export class ProductAddedModalPage {
   private proceedToCheckoutButton: ElementFinder;
 
   constructor () {
-    this.proceedToCheckoutButton = $('.button-container > .button-medium > span');
+    this.proceedToCheckoutButton = $('[style*="display: block;"] .button-container > a');
   }
 
   public async proceedToCheckout(): Promise<void> {

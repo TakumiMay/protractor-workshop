@@ -4,7 +4,7 @@ export class ProductListPage {
   private addToCartButton: ElementFinder;
 
   constructor () {
-    this.addToCartButton = $('.ajax_add_to_cart_button > span');
+    this.addToCartButton = $('[title="Add to cart"]');
   }
 
   public async selectFirstItem(): Promise<void> {
