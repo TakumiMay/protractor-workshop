@@ -24,32 +24,32 @@ describe('Buy a t-shirt', () => {
   const signInStepPage: SignInStepPage = new SignInStepPage();
   const summaryStepPage: SummaryStepPage = new SummaryStepPage();
 
-  describe('Open the page in the browser', async () => {
+  describe('Given an online store', async () => {
     await browser.waitForAngularEnabled(false);
     await browser.get('http://automationpractice.com/');
   });
 
-  describe('T-shirt purchase process', async () => {
+  describe('When a user wants to buy a T-Shirt', async () => {
     await menuContentPage.goToTShirtMenu();
     await productListPage.selectFirstItem();
     await productAddedModalPage.proceedToCheckout();
     await summaryStepPage.proceedToCheckout();
   });
 
-  describe('Sign in to the app', async () => {
+  describe('And sign in to his/her account', async () => {
     await signInStepPage.login('aperdomobo@gmail.com', 'WorkshopProtractor');
   });
 
-  describe('Select the default address', async () => {
+  describe('Selects the default address', async () => {
     await addressStepPage.proceedToCheckout();
     await shippingStepPage.acceptAndContinue();
   });
 
-  describe('Payment at the bank', async () => {
+  describe('And chooses the bankwire payment type', async () => {
     await paymentStepPage.payByBankWire();
     await bankPaymentPage.confirmOrder();
 
-    it('then should be bought a t-shirt', async () => {
+    it('Then the t-shirt must have been successfully bought', async () => {
       await expect(orderSummaryPage.getOrderTitle()).toBe('Your order on My Store is complete.');
     });
   });
